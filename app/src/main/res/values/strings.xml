@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">රාහු කාලය</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="empty">&#160;</string>
+    <string name="img_desc">IMG</string>
+    <string name="theme"> තේමා </string>
+    <string name="ad_unit_banner">ca-app-pub-3505600525587058/7187699127</string>
+    <string name="ad_unit_inst">ca-app-pub-3505600525587058~8664432326</string>
+    <string name="action_close">Close</string>
+    <string name="msg_reg_success">Your register message has been sent.</string>
+    <string name="msg_reg_failed">Your register message not sent.</string>
+</resources>

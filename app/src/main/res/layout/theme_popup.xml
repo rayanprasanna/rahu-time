@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:id="@+id/theme_layout"
+    android:layout_margin="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/search_bar"
+        android:background="@color/colorPrimary"
+        app:theme="@style/AppTheme.Toolbar">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:text="තේමා"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="top|right"
+            android:id="@+id/close"
+            android:background="@drawable/close_win"
+            android:visibility="visible"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/search_bar"
+        android:layout_gravity="center"
+        android:gravity="center"
+        tools:ignore="UselessLeaf,UselessParent">
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Blue Theme"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText"
+                android:layout_margin="20dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select"
+                android:id="@+id/blue_theme"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginVertical="20dp"
+                android:background="#9000ff00"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Red Theme"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText,UnusedAttribute"
+                android:layout_marginHorizontal="20dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select"
+                android:id="@+id/red_theme"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="#9000ff00"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Green Theme"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText"
+                android:layout_margin="20dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select"
+                android:id="@+id/green_theme"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginVertical="20dp"
+                android:background="#9000ff00"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Puple Theme"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText,UnusedAttribute"
+                android:layout_marginHorizontal="20dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:id="@+id/purple_theme"
+                android:background="#9000ff00"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="pink Theme"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText"
+                android:layout_margin="20dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:id="@+id/pink_theme"
+                android:layout_marginVertical="20dp"
+                android:background="#9000ff00"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Default Theme"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText,UnusedAttribute"
+                android:layout_marginHorizontal="20dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:id="@+id/default_theme"
+                android:background="#9000ff00"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/red_ray"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="රක්ත වර්ණ"
+                android:layout_margin="10dp"
+                tools:ignore="HardcodedText" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_red_theme"
+                android:layout_gravity="center"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/yellow_ray"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="කහ වර්ණ"
+                android:layout_margin="10dp"
+                tools:ignore="HardcodedText" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_yellow_theme"
+                android:layout_gravity="center"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/green_ray"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="හරිත වර්ණ"
+                android:layout_marginHorizontal="10dp"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_green_theme"
+                android:layout_gravity="center"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/blue_ray"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="නීල වර්ණ"
+                android:layout_margin="10dp"
+                tools:ignore="HardcodedText" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_blue_theme"
+                android:layout_gravity="center"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/purple_ray"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="දම් වර්ණ"
+                android:layout_marginHorizontal="10dp"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_purple_theme"
+                android:layout_gravity="center"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/default_ray"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="පෙර තේමාව"
+                android:layout_margin="10dp"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_default_theme"
+                android:layout_gravity="center"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

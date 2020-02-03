@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_main">#FFFFC107</color>
+    <color name="button_pressed">#66000000</color>
+    <color name="button_stroke">#000066</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#F0CD00</color>
+    <color name="red">#FF0000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="colorPrimary">#FF0000</color>
+    <color name="colorPrimaryDark">#990000</color>
+    <color name="tool_bar">#810000</color>
+    <color name="colorAccent">#D32F2F</color>
+</resources>

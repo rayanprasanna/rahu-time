@@ -1,0 +1,4 @@
+#Thu Jun 20 15:11:32 IST 2019
+base.0=D\:\\Office Projects\\Bit\\RahuKalaya\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,355 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.rahukalaya.MainActivity" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black_overlay"
+                android:orientation="vertical"
+                android:padding="6dp" >
+
+                <TextView
+                    android:id="@+id/dateText"
+                    style="@style/YellowLable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/app_main"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/empty" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/iraudawaImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/img_desc"
+                        android:src="@drawable/lbl_iraudava" />
+
+                    <TextView
+                        android:id="@+id/iraudawaText"
+                        style="@style/YellowLable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/lbl_padding"
+                        android:text="@string/empty" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/irabasimaImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/img_desc"
+                        android:src="@drawable/lbl_iraubasima" />
+
+                    <TextView
+                        android:id="@+id/irabasimaText"
+                        style="@style/YellowLable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/lbl_padding"
+                        android:text="@string/empty" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/lbl_divide_margin"
+                    android:background="@color/app_main"
+                    android:contentDescription="@string/img_desc"
+                    android:src="@drawable/lbl_rahu" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_main"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/img_desc"
+                        android:src="@drawable/lbl_diva" />
+
+                    <TextView
+                        android:id="@+id/divaSitaText"
+                        style="@style/RedLable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/lbl_padding"
+                        android:paddingRight="@dimen/lbl_padding"
+                        android:text="@string/empty" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/img_desc"
+                        android:src="@drawable/lbl_sita" />
+
+                    <TextView
+                        android:id="@+id/divaDakvaText"
+                        style="@style/RedLable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/lbl_padding"
+                        android:paddingRight="@dimen/lbl_padding"
+                        android:text="@string/empty" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/img_desc"
+                        android:src="@drawable/lbl_dakva" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_main"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/img_desc"
+                        android:src="@drawable/lbl_rathree" />
+
+                    <TextView
+                        android:id="@+id/rathreeSitaText"
+                        style="@style/RedLable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/lbl_padding"
+                        android:paddingRight="@dimen/lbl_padding"
+                        android:text="@string/empty" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/img_desc"
+                        android:src="@drawable/lbl_sita" />
+
+                    <TextView
+                        android:id="@+id/rathreeDakvaText"
+                        style="@style/RedLable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/lbl_padding"
+                        android:paddingRight="@dimen/lbl_padding"
+                        android:text="@string/empty" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/img_desc"
+                        android:src="@drawable/lbl_dakva" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lbl_divide_margin"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/img_desc"
+                        android:src="@drawable/lbl_subadishava" />
+
+                    <ImageView
+                        android:id="@+id/subaImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/img_desc"
+                        android:src="@drawable/lbl_disha_basnahira" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/img_desc"
+                        android:src="@drawable/lbl_marudishava" />
+
+                    <ImageView
+                        android:id="@+id/maruImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/img_desc"
+                        android:src="@drawable/lbl_disha_isana" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/adaButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/btn_margin"
+                    android:background="@drawable/button_main"
+                    android:contentDescription="@string/img_desc"
+                    android:src="@drawable/btn_ada" />
+
+                <ImageButton
+                    android:id="@+id/mondayButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/btn_margin"
+                    android:background="@drawable/button_main"
+                    android:contentDescription="@string/img_desc"
+                    android:src="@drawable/btn_sanduda" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/tuesdayButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/btn_margin"
+                    android:background="@drawable/button_main"
+                    android:contentDescription="@string/img_desc"
+                    android:src="@drawable/btn_agaharuwada" />
+
+                <ImageButton
+                    android:id="@+id/wednesdayButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/btn_margin"
+                    android:background="@drawable/button_main"
+                    android:contentDescription="@string/img_desc"
+                    android:src="@drawable/btn_badada" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/thursdayButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/btn_margin"
+                    android:background="@drawable/button_main"
+                    android:contentDescription="@string/img_desc"
+                    android:src="@drawable/btn_brahas" />
+
+                <ImageButton
+                    android:id="@+id/fridayButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/btn_margin"
+                    android:background="@drawable/button_main"
+                    android:contentDescription="@string/img_desc"
+                    android:src="@drawable/btn_sikurada" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/saturdayButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/btn_margin"
+                    android:background="@drawable/button_main"
+                    android:contentDescription="@string/img_desc"
+                    android:src="@drawable/btn_senasurada" />
+
+                <ImageButton
+                    android:id="@+id/sundayButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/btn_margin"
+                    android:background="@drawable/button_main"
+                    android:contentDescription="@string/img_desc"
+                    android:src="@drawable/btn_irida" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/adsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" >
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/ad_unit_banner" />
+    </LinearLayout>
+
+</LinearLayout>
